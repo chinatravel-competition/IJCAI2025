@@ -1,0 +1,9 @@
+.intro-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+.text-muted.large {
+  text-align: justify;  // 两端对齐
+  text-justify: inter-word;  // 优化单词间距（英文场景）
+}

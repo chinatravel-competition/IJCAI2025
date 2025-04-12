@@ -6,7 +6,13 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: auto;
+  background-color: #469257; // 备用背景色（图片未覆盖区域）
+  
+  @media (max-width: 768px) {
+    background-size: contain;
+  }
+  
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;

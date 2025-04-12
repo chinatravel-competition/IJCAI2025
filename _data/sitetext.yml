@@ -11,29 +11,39 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
-    text: It's Nice To Meet You
+    # title: Welcome to our Competition!
+    # text: It's Nice To Meet You
     button: Tell Me More
-    buttonlink: "#services"
+    buttonlink: "#intro"
+
+  intro:
+    section: intro
+    title: "Introduction"
+    text: ""  # 副标题（可留空）
+    body: |
+      Travel itinerary planning represents a pivotal challenge in artificial intelligence, combining real-world complexity with the need for reliable, user-centric decision-making. As a ubiquitous yet intricate task, it demands seamless integration of spatial, temporal, and financial constraints while aligning with diverse user preferences such as budget limits, dining habits, and activity priorities. Despite advancements in AI-driven planning systems, existing solutions often struggle to balance long-horizon reasoning, multi-modal data fusion, and dynamic constraint satisfaction—highlighting a critical gap between academic research and practical deployment.
+      
+      The IJCAI-25 Travel Planning Challenge (TPC@IJCAI25), co-organized by Nanjing University, Huawei, and JSAI, aims to bridge this gap by fostering innovations in AI agents capable of generating robust, personalized travel plans. Participants will tackle the task of synthesizing detailed itineraries—spanning transportation, accommodation, activities, and cost management—based on user queries with heterogeneous requirements. This competition intersects cutting-edge domains such as Natural Language Processing, LLM Reasoning and Planning, Constraint Optimization, and Neuro-Symbolic Learning, offering a unique platform to explore the synergy of generative AI, recommendation systems, and planning technologies.
+      
 
   services:
-    title: "Services"
-    text: "Lorem ipsum"
+    title: "Tasks"
+    text: "There are three tracks in TPC@IJCAI2025."
     section: services
     list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
+      - title: "OS Track"
+        desc: "TBD"
+        icon: fas fa-laptop #find more at https://fontawesome.com/icons
+      - title: "Nesy Track"
+        desc: "TBD"
+        icon: fas fa-square-binary
+      - title: "TBD"
+        desc: "TBD"
         icon: fab fa-markdown
 
   portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    title: "Tasks"
+    text: "There are three tracks in TPC@IJCAI2025."
     section: portfolio
     closebutton: "Close Project"
 
@@ -79,55 +89,56 @@ en: &DEFAULT_EN
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+      - title: "NJU"
+        url: https://www.nju.edu.cn/en/index.htm
+        logo: assets/img/clients/nju.jpeg
+      - title: "LAMDA"
+        url: https://www.lamda.nju.edu.cn/CH.MainPage.ashx
+        logo: assets/img/clients/lamda.jpg
+      - title: "Huawei"
+        url: https://www.huawei.com/
+        logo: assets/img/clients/huawei.jpeg
+      - title: "JSAI"
+        url: http://www.jsai.org.cn/
+        logo: assets/img/clients/JSAI.jpg
 
   team:
-    title: "OUR AMAZING TEAM"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    title: "OUR ORGANIZATION TEAM"
+    text: ""
+    subtext: 
     section: team
     people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
+      - name: "Lan-Zhe Guo"
+        role: "Nanjing University"
         image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
+        
+      - name: "Yu-Feng Li"
+        role: "Nanjing University"
         image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
+
+      - name: "Jie-Jing Shao"
+        role: "Nanjing University"
+        image: assets/img/team/500x500.jpg
+
+      - name: "Xiao-Wen Yang"
+        role: "Nanjing University"
+        image: assets/img/team/500x500.jpg
+
+      - name: "Bo-Wen Zhang"
+        role: "Nanjing University"
+        image: assets/img/team/500x500.jpg
+
+      - name: "Guohao Cai"
+        role: "Huawei Noah's Ark Lab"
+        image: assets/img/team/500x500.jpg
+
+      - name: "Quanyu Dai"
+        role: "Huawei Noah's Ark Lab"
+        image: assets/img/team/500x500.jpg
+
+      - name: "Zhenhua Dong"
+        role: "Huawei Noah's Ark Lab"
+        image: assets/img/team/500x500.jpg
 
   contact:
     title: "Contact Us"
@@ -238,18 +249,18 @@ es: &DEFAULT_ES
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+      - title: "NJU"
+        url: https://www.nju.edu.cn/en/index.htm
+        logo: assets/img/clients/nju.jpeg
+      - title: "LAMDA"
+        url: https://www.lamda.nju.edu.cn/CH.MainPage.ashx
+        logo: assets/img/clients/lamda.jpg
+      - title: "Huawei"
+        url: https://www.huawei.com/
+        logo: assets/img/clients/huawei.jpeg
+      - title: "JSAI"
+        url: http://www.jsai.org.cn/
+        logo: assets/img/clients/JSAI.jpg
 
   team:
     title: "NUESTRO INCREÍBLE EQUIPO"

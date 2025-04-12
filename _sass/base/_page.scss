@@ -2,6 +2,8 @@
 body {
   overflow-x: hidden;
   @include body-font;
+  text-align: justify;  // 两端对齐
+  text-justify: inter-word;  // 优化单词间距（英文场景）
 }
 
 p {

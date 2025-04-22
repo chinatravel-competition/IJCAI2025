@@ -110,35 +110,35 @@ en: &DEFAULT_EN
     people:
       - name: "Lan-Zhe Guo"
         role: "Nanjing University"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/guolz.jpeg
         
       - name: "Yu-Feng Li"
         role: "Nanjing University"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/liyf.jpg
 
       - name: "Jie-Jing Shao"
         role: "Nanjing University"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/shaojj.jpg
 
       - name: "Xiao-Wen Yang"
         role: "Nanjing University"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/yangxw.png
 
       - name: "Bo-Wen Zhang"
         role: "Nanjing University"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/zhangbw.jpg
 
       - name: "Guohao Cai"
         role: "Huawei Noah's Ark Lab"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/caigh.jpg
 
       - name: "Quanyu Dai"
         role: "Huawei Noah's Ark Lab"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/daiqy.jpg
 
       - name: "Zhenhua Dong"
         role: "Huawei Noah's Ark Lab"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/dongzh.jpg
 
   contact:
     title: "Contact Us"

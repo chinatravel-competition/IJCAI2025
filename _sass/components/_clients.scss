@@ -1,0 +1,11 @@
+#clients {
+  .row {
+    .col-md-2 {
+      // 确保小屏幕下 logo 正确显示
+      @media (max-width: 767px) { 
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}

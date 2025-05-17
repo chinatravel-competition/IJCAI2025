@@ -86,7 +86,7 @@ en: &DEFAULT_EN
 
   clients:
     section: clients
-    max-height: 100px
+    max_height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
       - title: "NJU"
@@ -101,6 +101,9 @@ en: &DEFAULT_EN
       - title: "JSAI"
         url: http://www.jsai.org.cn/
         logo: assets/img/clients/JSAI.jpg
+      - title: "FCS"
+        url: https://link.springer.com/journal/11704/
+        logo: assets/img/clients/FCS.png
 
   team:
     title: "OUR ORGANIZATION TEAM"

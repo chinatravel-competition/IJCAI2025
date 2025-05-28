@@ -23,29 +23,85 @@ en: &DEFAULT_EN
     body: |
       Travel itinerary planning represents a pivotal challenge in artificial intelligence, combining real-world complexity with the need for reliable, user-centric decision-making. As a ubiquitous yet intricate task, it demands seamless integration of spatial, temporal, and financial constraints while aligning with diverse user preferences such as budget limits, dining habits, and activity priorities. Despite advancements in AI-driven planning systems, existing solutions often struggle to balance long-horizon reasoning, multi-modal data fusion, and dynamic constraint satisfaction—highlighting a critical gap between academic research and practical deployment.
       
-      The IJCAI-25 Travel Planning Challenge (TPC@IJCAI25), co-organized by Nanjing University, Huawei, and JSAI, aims to bridge this gap by fostering innovations in AI agents capable of generating robust, personalized travel plans. Participants will tackle the task of synthesizing detailed itineraries—spanning transportation, accommodation, activities, and cost management—based on user queries with heterogeneous requirements. This competition intersects cutting-edge domains such as Natural Language Processing, LLM Reasoning and Planning, Constraint Optimization, and Neuro-Symbolic Learning, offering a unique platform to explore the synergy of generative AI, recommendation systems, and planning technologies.
+      The IJCAI-25 Travel Planning Challenge (TPC@IJCAI25), co-organized by Nanjing University, Huawei, JSAI, and FCS, aims to bridge this gap by fostering innovations in AI agents capable of generating robust, personalized travel plans. Participants will tackle the task of synthesizing detailed itineraries—spanning transportation, accommodation, activities, and cost management—based on user queries with heterogeneous requirements. This competition intersects cutting-edge domains such as Natural Language Processing, LLM Reasoning and Planning, Constraint Optimization, and Neuro-Symbolic Learning, offering a unique platform to explore the synergy of generative AI, recommendation systems, and planning technologies.
       
 
   services:
     title: "Tasks"
-    text: "There are three tracks in TPC@IJCAI2025."
     section: services
     list:
-      - title: "OS Track"
-        desc: "TBD"
-        icon: fas fa-laptop #find more at https://fontawesome.com/icons
-      - title: "Nesy Track"
-        desc: "TBD"
-        icon: fas fa-square-binary
-      - title: "TBD"
-        desc: "TBD"
-        icon: fab fa-markdown
+      - title: "Oracle DSL Track"
+        desc: "You can get the **DSL annotation** [1] of the travel requirements in the query to help you build the plans. During the testing phase, we provide a DSL and symbolic verifier for user requirements. Developers can validate and refine their solutions using this verifier, such as employing LLM-modulo [2,3] to prompt LLMs with unmet constraints for plan refinement, or leveraging NeSy Planning (with Oracle Translation) [1] to control backtracking in the guided search process."
+        icon: fas fa-code
+      - title: "Original OS Track"
+        desc: "You need to analyze the needs from the user's **original natural language** needs and build the plans. During the testing phase, participants are required to achieve understanding of natural language-expressed constraints and automatically generate constraint-satisfying travel plans. Developers can enhance the agents through prompt engineering or post-training, improve efficiency via workflow improvment[1], or ensure constraint satisfaction through formal translation and solvers[5]. These are suggested approaches and participants are also encouraged to explore alternative methodologies"
+        icon: fas fa-desktop
+    text: |
+      <div style="text-align: left;">
+     
+      <strong>Evaluation Metrics:</strong> For both TPC-Oracle and TPC-Original, we employ four hard constraints metrics: Environmental Pass Ratio-micro, Environmental Pass Ratio-macro, Conditional Logical Pass Rate, and Final Pass Ratio; and three soft preferences metrics: Daily Average Attractions Visited, Averaged Transportation Time, and Daily Dining Recommendations. The overall score is calculated as the weighted sum of the four hard constraints metrics and the three soft preferences metrics. The weights of the hard constraints metrics and the soft preferences metrics are 0.1, 0.1, 0.25, 0.4, 0.05, 0.05, 0.05, respectively. You could obtain all of these scores by running the provided script. 
+      <br>
+      <br>
+      <strong>Registration:</strong> 
+      <br>
+      <br>
 
-  portfolio:
-    title: "Tasks"
-    text: "There are three tracks in TPC@IJCAI2025."
-    section: portfolio
-    closebutton: "Close Project"
+      <strong>Dataset:</strong>  
+      <br>
+      <br>
+
+      <strong>Codebase:</strong> <a href="https://github.com/LAMDASZ-ML/ChinaTravel">https://github.com/LAMDASZ-ML/ChinaTravel</a>
+      <br>
+      <br>
+      <strong>Baseline paper:</strong> <a href="https://arxiv.org/abs/2412.13682">https://arxiv.org/abs/2412.13682</a>
+      <br>
+      <br>
+
+      <strong>Phase 1 - Preliminary Round:</strong>
+      <ul>
+        <li>Devlopment on the Release dataset (url: )</li>
+        <li>Local validation with provided evaluation scripts</li>
+        <li>Submit algorithm outputs through our submission portal</li>
+        <li>Monitor your scores on the Codabench leaderboard</li>
+        <li>Top 50 teams advance based on validation scores</li>
+      </ul>
+      <strong>Phase 2 - Semi-Final Round:</strong>
+      <ul>
+        <li>New challenge dataset (with the same format of Preliminary Round) release.</li>
+        <li>Local validation with provided evaluation scripts</li>
+        <li>Submit algorithm outputs through our submission portal</li>
+        <li>Monitor your scores on the Codabench leaderboard</li>
+        <li>Code submission for verification before the Phase 2 deadline</li>
+        <li>Top 10 teams advance to final round</li>
+      </ul>
+      <strong>Phase 3 - Final Round:</strong>
+      <ul>
+        <li>Final code submission</li>
+        <li>Official Evaluation on the private dataset</li>
+        <li>Paper submission before the Phase 3 deadline</li>
+        <li>Official results announcement on IJCAI25</li>
+      </ul>
+
+      <br>
+      
+      <br>
+
+      <strong>Paper submission:</strong> All participants are encouraged to submit a technical report describing their solution. Top-10 teams in each track MUST submit a paper. Top-3 winning teams in each track will be awarded with a certificate. Paper sumbission link will be realsed in July. 
+
+      <br>
+      <br>
+      <strong>References:</strong><br>
+      [1]. ChinaTravel: A Real-World Benchmark for Language Agents in Chinese Travel Planning. 
+      <br>
+      [2]. Robust Planning with LLM-Modulo Framework: Case Study in Travel Planning. 
+      <br>
+      [3]. Robust Planning with Compound LLM Architectures: An LLM-Modulo Approach. 
+      <br>
+      [4]. TravelPlanner: A Benchmark for Real-World Planning with Language Agents.
+      <br>
+      [5]. To the Globe (TTG): Towards Language-Driven Guaranteed Travel Planning. 
+      </div>
+      
 
   timeline:
     title: "Timeline"
@@ -142,6 +198,18 @@ en: &DEFAULT_EN
       - name: "Zhenhua Dong"
         role: "Huawei Noah's Ark Lab"
         image: assets/img/team/dongzh.jpg
+
+      - name: "Kun-Yang Yu"
+        role: "Nanjing University"
+        image: assets/img/team/yuky.jpg
+
+      - name: "Zhi Zhou"
+        role: "Nanjing University"
+        image: assets/img/team/zhouz.jpg
+
+      - name: "Siyu Han"
+        role: "Nanjing University"
+        image: assets/img/team/hansy.jpg
 
   contact:
     title: "Contact Us"

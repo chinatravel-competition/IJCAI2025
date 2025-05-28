@@ -48,6 +48,8 @@ en: &DEFAULT_EN
 
       <strong>Dataset:</strong>  
       <br>
+      <a href="/assets/datasets/TPC_phase1.zip" download>Download Phase 1 Data</a> (updated: 2025-05-28)
+      <br>
       <br>
 
       <strong>Codebase:</strong> <a href="https://github.com/LAMDASZ-ML/ChinaTravel">https://github.com/LAMDASZ-ML/ChinaTravel</a>

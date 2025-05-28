@@ -159,7 +159,7 @@ en: &DEFAULT_EN
         logo: assets/img/clients/JSAI.jpg
       - title: "FCS"
         url: https://link.springer.com/journal/11704/
-        logo: assets/img/clients/FCS.png
+        logo: assets/img/clients/FCS_logo.png
 
   team:
     title: "OUR ORGANIZATION TEAM"

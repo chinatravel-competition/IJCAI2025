@@ -208,7 +208,7 @@ en: &DEFAULT_EN
 
       - name: "Kun-Yang Yu"
         role: "Nanjing University"
-        image: assets/img/team/yuky.jpg
+        image: assets/img/team/yuky.jpeg
 
       - name: "Zhi Zhou"
         role: "Nanjing University"

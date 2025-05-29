@@ -49,11 +49,11 @@ en: &DEFAULT_EN
       <strong>Dataset:</strong>  
       <br>
       <a href="assets/datasets/TPC_IJCAI_phase1.zip" download class="btn btn-primary mt-3">
-        <i class="fas fa-download me-2"></i>Phase 1 Data (2025-05-28)
+        <i class="fas fa-download me-2"></i>Phase 1 Data (2025-05-29)
       </a>
 
       <a href="assets/datasets/TPC_IJCAI_phase1.txt" download class="btn btn-primary mt-3">
-        <i class="fas fa-download me-2"></i>Phase 1 Data Index (2025-05-28)
+        <i class="fas fa-download me-2"></i>Phase 1 Data Index (2025-05-29)
       </a>
 
       <br>
@@ -216,7 +216,7 @@ en: &DEFAULT_EN
 
       - name: "Siyu Han"
         role: "Nanjing University"
-        image: assets/img/team/hansy.jpg
+        image: assets/img/team/hansy.jpeg
 
   contact:
     title: "Contact Us"

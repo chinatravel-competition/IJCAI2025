@@ -55,7 +55,11 @@ en: &DEFAULT_EN
       <a href="assets/datasets/TPC_IJCAI_phase1.txt" download class="btn mt-3" style="background-color: lightgreen; border-color: lightgreen; color: black;">
         <i class="fas fa-download me-2"></i>Phase 1 Data Index (2025-05-29)
       </a>
-
+      <br>
+      <br>
+      <div style="background-color: #ffeb3b; padding: 15px; border-radius: 5px; text-align: center; font-weight: bold; margin-top: 20px;">
+        Please view the detailed rules in the <a href="{{ site.baseurl }}/competition_rules.html" style="color: #d32f2f; text-decoration: underline;">competition_rules</a> file.
+      </div>
       <br>
       <br>
 

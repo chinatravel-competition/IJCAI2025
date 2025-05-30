@@ -39,9 +39,6 @@ en: &DEFAULT_EN
     text: |
       <div style="text-align: left;">
      
-      <strong>Evaluation Metrics:</strong> For both TPC-Oracle and TPC-Original, we employ four hard constraints metrics: Environmental Pass Ratio-micro, Environmental Pass Ratio-macro, Conditional Logical Pass Rate, and Final Pass Ratio; and three soft preferences metrics: Daily Average Attractions Visited, Averaged Transportation Time, and Daily Dining Recommendations. The overall score is calculated as the weighted sum of the four hard constraints metrics and the three soft preferences metrics. The weights of the hard constraints metrics and the soft preferences metrics are 0.1, 0.1, 0.25, 0.4, 0.05, 0.05, 0.05, respectively. You could obtain all of these scores by running the provided script. 
-      <br>
-      <br>
       <strong id="registration-form">Registration:</strong> <a href="https://wenjuan.nju.edu.cn/vm/YOthCVH.aspx" style="color: green;">Registration Form</a>
       <br>
       <br>
@@ -61,11 +58,40 @@ en: &DEFAULT_EN
 
       <strong>Codebase:</strong> <a href="https://github.com/LAMDASZ-ML/ChinaTravel">https://github.com/LAMDASZ-ML/ChinaTravel</a>
       <br>
+      <br>
+      
+      <strong>Evaluation Metrics:</strong> For both TPC-Oracle and TPC-Original, we employ four hard constraints metrics: Environmental Pass Ratio-micro, Environmental Pass Ratio-macro, Conditional Logical Pass Rate, and Final Pass Ratio; and three soft preferences metrics: Daily Average Attractions Visited, Averaged Transportation Time, and Daily Dining Recommendations. The overall score is calculated as the weighted sum of the four hard constraints metrics and the three soft preferences metrics. The weights of the hard constraints metrics and the soft preferences metrics are 0.1, 0.1, 0.25, 0.4, 0.05, 0.05, 0.05, respectively. You could obtain all of these scores by running the provided script. 
+      <br>
+      <br>
+      
 
-      <div style="background-color: #ffeb3b; padding: 15px; border-radius: 5px; text-align: center; font-weight: bold; margin-top: 20px;">
-        Please view the detailed rules here.
+      <strong>Paper submission:</strong> All participants are encouraged to submit a technical report describing their solution. Top-10 teams in each track MUST submit a paper. Top-3 winning teams in each track will be awarded with a certificate. Paper sumbission link will be realsed in July. 
+      <br>
+      <br>
+      <strong>References:</strong><br>
+      [1]. ChinaTravel: A Real-World Benchmark for Language Agents in Chinese Travel Planning. 
+      <br>
+      [2]. Robust Planning with LLM-Modulo Framework: Case Study in Travel Planning. 
+      <br>
+      [3]. Robust Planning with Compound LLM Architectures: An LLM-Modulo Approach. 
+      <br>
+      [4]. TravelPlanner: A Benchmark for Real-World Planning with Language Agents.
+      <br>
+      [5]. To the Globe (TTG): Towards Language-Driven Guaranteed Travel Planning. 
+      </div>
+      
+  rules:
+    title: "Competition Rules"
+    section: rules
+    text: |
+
+      <div id="rules" style="background-color: #ffeb3b; padding: 15px; border-radius: 5px; text-align: center; font-weight: bold; margin-top: 20px;">
+        Please carefully view the detailed rules here.
       </div>
       <br>
+
+      <div style="text-align: left;">
+     
 
       <strong>Phase 1 - Preliminary Round:</strong>
       <ul>
@@ -75,7 +101,7 @@ en: &DEFAULT_EN
         Note that the Phase 1 testing will be conducted on 1,000 of these samples, and the corresponding data index is provided in TPC_IJCAI_phase1.txt of released dataset. 
         <li>Submit algorithm outputs through our submission portal</li>
         CodaBench URL: 
-        You need to submit a zip file containing multiple result files named {index}.json, where index corresponds to each index in the Phase1 data. Each .json file should contain the final result of travel planning using your method.  
+        You need to submit a zip file containing multiple result files named {index}.json, where index corresponds to each index in the Phase1 data. Each JSON file should contain the final result of travel planning using your method.  
         <li>Monitor your scores on the Codabench leaderboard</li>
         <li>Top 50 teams advance based on validation scores</li>
         Please complete the <a href="#registration-form">registration</a> before the Phase 1 Deadline (July 31, 2025 AOE). Teams that fail to register will be automatically disqualified from the competition. 
@@ -96,32 +122,18 @@ en: &DEFAULT_EN
       <strong>Phase 3 - Final Round:</strong>
       <ul>
         <li>Official Evaluation on the private dataset</li>
+
+        During the final round, the last submitted code from the semi-final round by the participants will be used, and no code modifications will be allowed. The organizing committee will conduct evaluations on the private dataset following the same process as the semi-final round to obtain objective score evaluations.
         <li>Paper submission before the Phase 3 deadline</li>
+        
+        Papers should adhere to the IJCAI template. The LaTeX styles and Word template are available <a href="https://www.ijcai.org/authors_kit" > here </a>. There is no page limit.
+        The papers will be scored by five experts organized by the organizing committee, focusing on clarity and innovation. Scores will range from 0 to 100. The final subjective score will be the average of the five experts' scores.
+
         <li>Official results announcement on IJCAI25</li>
+        The final ranking will be determined by comprehensively considering the objective score evaluation and the quality of the technical proposal at a ratio of 4:1. The organizing committee will announce the results at the satellite event in Guangzhou. All participants are warmly welcome to attend IJCAI25 and our competition! 
       </ul>
       
-      
-      <br>
-      
-      <br>
-
-      <strong>Paper submission:</strong> All participants are encouraged to submit a technical report describing their solution. Top-10 teams in each track MUST submit a paper. Top-3 winning teams in each track will be awarded with a certificate. Paper sumbission link will be realsed in July. 
-
-      <br>
-      <br>
-      <strong>References:</strong><br>
-      [1]. ChinaTravel: A Real-World Benchmark for Language Agents in Chinese Travel Planning. 
-      <br>
-      [2]. Robust Planning with LLM-Modulo Framework: Case Study in Travel Planning. 
-      <br>
-      [3]. Robust Planning with Compound LLM Architectures: An LLM-Modulo Approach. 
-      <br>
-      [4]. TravelPlanner: A Benchmark for Real-World Planning with Language Agents.
-      <br>
-      [5]. To the Globe (TTG): Towards Language-Driven Guaranteed Travel Planning. 
       </div>
-      
-
   timeline:
     title: "Timeline"
     text: "Lorem ipsum timeline"
@@ -260,305 +272,5 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
-
-# Spanish
-# -------
-es: &DEFAULT_ES
-  header:
-    title: ¡Bienvenido a nuestro Estudio!
-    text: Es un placer conocerle
-    button: Ver más
-    buttonlink: "#servicios"
-
-  services:
-    title: "Servicios"
-    text: "Lorem ipsum"
-    section: servicios
-    list:
-      - title: "Comercio Electrónico"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Diseño Responsivo"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Su descripción aquí, soporte completo de **Markdown**"
-        icon: fab fa-markdown
-
-  portfolio:
-    title: "Portafolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portafolio
-    closebutton: "Cerrar Proyecto"
-
-  timeline:
-    title: "Cronología"
-    text: "Lorem ipsum timeline"
-    section: cronologia
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Nuestro Humilde Comienzo"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "Una Agencia nace"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "La plantilla Jekyll es creada"
-        year: "2019"
-        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Título"
-        year: "2009-2011"
-        desc: "Su descripción aquí, **Markdown** es soportado completamente."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "¡Se parte <br> de Nuestra <br> Historia!"
-
-  about:
-    title: "Sobre nosotros"
-    text: "nuestra historia"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: nosotros
-
-  clients:
-    section: clientes
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "NJU"
-        url: https://www.nju.edu.cn/en/index.htm
-        logo: assets/img/clients/nju.jpeg
-      - title: "LAMDA"
-        url: https://www.lamda.nju.edu.cn/CH.MainPage.ashx
-        logo: assets/img/clients/lamda.jpg
-      - title: "Huawei"
-        url: https://www.huawei.com/
-        logo: assets/img/clients/huawei.jpeg
-      - title: "JSAI"
-        url: http://www.jsai.org.cn/
-        logo: assets/img/clients/JSAI.jpg
-
-  team:
-    title: "NUESTRO INCREÍBLE EQUIPO"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: equipo
-    people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-
-  contact:
-    title: "Contáctenos"
-    text: "Lorem ipsum or call 123456789"
-    section: contacto
-    name: "Nombre*"
-    name-validation: "Por favor ingrese su nombre."
-    email: "Correo Electrónico*"
-    email-validation: "Por favor ingrese su correo electrónico."
-    phone: "Número Telefónico*"
-    phone-validation: "Por favor ingrese su número telefónico."
-    message: "Mensaje*"
-    message-validation: "Por favor escriba un mensaje."
-    subject: "Envío del formulario de contacto"
-    submit: "Enviar Mensaje"
-
-  footer:
-    legal: "Política de Privacidad"
-    social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
-
-# Deutsch
-# -----------------
-de: &DEFAULT_DE
-  header:
-    title: Willkommen auf unserer Webseite!
-    text: Schön das Sie hier sind!
-    button: Mehr erfahren
-    buttonlink: "#Angebote"
-
-  services:
-    title: "Leistungen"
-    text: "Was wir anbieten."
-    section: Leistungen
-    list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://de.wikipedia.org/wiki/Markdown)"
-        desc: "Hier können Sie etwas mit **Markdown** einfügen."
-        icon: fab fa-markdown
-
-  portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: Portfolio
-    closebutton: "Schließen"
-
-  timeline:
-    title: "Geschichte"
-    text: "Lorem ipsum timeline"
-    section: Geschichte
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Unsere Anfänge"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "Gründung der Firma"
-        year: "März 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "Das Jekyll-Thema wurde erstellt"
-        year: "2019"
-        desc: "Ravi Riley wandelte Agency, ein auf Bootstrap basierendes Thema, in ein Jekyll-Thema um. Man kann das Jekyll-Thema als Ruby-Gem oder remotely installieren. Für mehr Informationen, schauen Sie sich die Dokumentation an."
-        image: assets/img/timeline/3.jpg
-        alt: Bildbeschreibung
-      - title: "Titel"
-        year: "2009-2011"
-        desc: "Hier können Sie etwas mit **Markdown** einfügen."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "Seien Sie <br> Teil unserer <br> Geschichte!"
-
-  about:
-    title: "Über uns"
-    text: "Unsere Geschichte."
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: Ueber
-
-  clients:
-    section: Kunden
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
-
-  team:
-    title: "Unser großartiges Team"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: Team
-    people:
-      - name: "Kay Garland"
-        role: "Chef-Designer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Chef der Werbeabteilung"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Chef-Programmiererin"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-
-  contact:
-    title: "Kontakt"
-    text: "Kontaktieren Sie uns."
-    section: Kontakt
-    name: "Name*"
-    name-validation: "Geben Sie einen Namen ein."
-    email: "E-Mail*"
-    email-validation: "Geben Sie Ihre E-Mail-Addresse ein."
-    phone: "Telefonnummer*"
-    phone-validation: "Geben Sie Ihre Telefonnummer ein."
-    message: "Nachricht*"
-    message-validation: "Schreiben Sie etwas..."
-    subject: "Kontakt-Formular Bestätigung"
-    submit: "Nachricht absenden"
-
-  footer:
-    legal: "Datenschutzerklärung"
-    social:
-      - url: https://github.com/LAMDASZ-ML/ChinaTravel
-        icon: "fab fa-github"
-      - url: https://huggingface.co/datasets/LAMDA-NeSy/ChinaTravel
-        icon: "fab fa-huggingface"
 de-DE:
-  <<: *DEFAULT_DE
+  <<: *DEFAULT_EN

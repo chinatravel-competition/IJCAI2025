@@ -1,0 +1,56 @@
+<!-- rules -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+  <section class="page-section" id="{{ site.data.sitetext[site.locale].rules.section | default: "rules" }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">  <!-- 标题保持居中 -->
+          <h2 class="section-heading text-uppercase" style="color: black;">{{ site.data.sitetext[site.locale].rules.title | default: "rules" }}</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">  <!-- 新增行级居中 -->
+        {% for rule in site.data.sitetext[site.locale].rules.list %}
+        <div class="col-md-6 text-center">  <!-- 列级内容居中 -->
+          <span class="fa-stack fa-3x d-block mx-auto">  <!-- 图标强制居中 -->
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="{{ rule.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="rule-heading text-center" style="color: black;">{{ rule.title | markdownify }}</h4>  <!-- 标题居中 -->
+          {% if rule.desc %}
+          <div class="text-muted" style="max-width: 400px; margin: 0 auto; text-align: justify; text-justify: inter-word; color: black;"> 
+            {{ rule.desc | markdownify }}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% if site.data.sitetext[site.locale].rules.text %}
+      <div class="row">
+        <div class="col-lg-12 text-center" style="max-width: 800px; margin: 0 auto;">
+          <h3 class="section-subheading mt-4" style="font-style: normal; color: black; line-height: 1.6;">
+            {{ site.data.sitetext[site.locale].rules.text | markdownify }}
+          </h3>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+{% else %}
+<section class="page-section" id="rules-section">
+  <div class="container">
+    <!-- 使用 justify-content-center 实现水平居中 -->
+    <div class="row justify-content-center">  
+      {% for item in 服务列表 %}
+      <div class="col-md-6">  <!-- 修改为每行2列布局 -->
+        <div class="rule-item text-center">
+          <!-- 直接显示单个图标 -->
+          <i class="{{ 图标 }} fa-3x text-primary"></i>
+          <h4 style="color: black;">{{ 标题 }}</h4>
+          <p class="text-muted" style="color: black;">{{ 描述 }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End rules -->

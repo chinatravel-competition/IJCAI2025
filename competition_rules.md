@@ -2,7 +2,7 @@
 layout: page
 title: Rules
 background: grey
-permalink: /rule/  # 指定子页面URL
+permalink: /rule____/  # 指定子页面URL
 ---
 
 

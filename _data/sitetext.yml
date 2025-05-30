@@ -57,11 +57,7 @@ en: &DEFAULT_EN
       </a>
       <br>
       <br>
-      <div style="background-color: #ffeb3b; padding: 15px; border-radius: 5px; text-align: center; font-weight: bold; margin-top: 20px;">
-        Please view the detailed rules in the <a href="{{ site.baseurl }}/competition_rules.html" style="color: #d32f2f; text-decoration: underline;">competition_rules</a> file.
-      </div>
-      <br>
-      <br>
+      
 
       <strong>Codebase:</strong> <a href="https://github.com/LAMDASZ-ML/ChinaTravel">https://github.com/LAMDASZ-ML/ChinaTravel</a>
       <br>
@@ -93,7 +89,7 @@ en: &DEFAULT_EN
       </ul>
       
       <div style="background-color: #ffeb3b; padding: 15px; border-radius: 5px; text-align: center; font-weight: bold; margin-top: 20px;">
-        Please view the detailed rules in the <a href="/competition_rules.html" style="color: #d32f2f; text-decoration: underline;">competition_rules</a>.
+        Please view the detailed rules in the <a href="/rule/index.html" style="color: #d32f2f; text-decoration: underline;">competition_rules</a>.
       </div>
       
       <br>

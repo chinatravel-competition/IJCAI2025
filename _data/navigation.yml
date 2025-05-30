@@ -16,7 +16,7 @@ en: &DEFAULT_EN
     - title: "Tasks"
       section: services
     - title: "Rules"  # 新增导航项
-      url: /competition_rules.html  # 指向新页面
+      url: /rule/  # 指向新页面
     - title: "Schedule"
       section: schedule
     - title: "Team"

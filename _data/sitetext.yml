@@ -31,14 +31,13 @@ en: &DEFAULT_EN
     section: services
     list:
       - title: "Oracle DSL Track"
-        desc: "You can get the **DSL annotation** [1] of the travel requirements in the query to help you build the plans. During the testing phase, we provide a DSL and symbolic verifier for user requirements. Developers can validate and refine their solutions using this verifier, such as employing LLM-modulo [2,3] to prompt LLMs with unmet constraints for plan refinement, or leveraging NeSy Planning (with Oracle Translation) [1] to control backtracking in the guided search process."
+        desc: "You can get the **DSL annotation** [1] of the travel requirements in the query to help you build the plans. During the testing phase, we provide a DSL and symbolic verifier for user requirements. Developers can validate and refine their solutions using this verifier, such as employing LLM-modulo [2,3] to prompt LLMs with unmet constraints for plan refinement, or leveraging NeSy Planning (with Oracle Translation) [1] to control backtracking in the guided search process. <br> <a href=\"https://www.codabench.org/competitions/8653/\" style=\"color: #2196F3; text-decoration: none; font-weight: bold;\">https://www.codabench.org/competitions/8653/</a>"
         icon: fas fa-code
       - title: "Original OS Track"
-        desc: "You need to analyze the needs from the user's **original natural language** needs and build the plans. During the testing phase, participants are required to achieve understanding of natural language-expressed constraints and automatically generate constraint-satisfying travel plans. Developers can enhance the agents through prompt engineering or post-training, improve efficiency via workflow improvment[1], or ensure constraint satisfaction through formal translation and solvers[5]. These are suggested approaches and participants are also encouraged to explore alternative methodologies"
+        desc: "You need to analyze the needs from the user's **original natural language** needs and build the plans. During the testing phase, participants are required to achieve understanding of natural language-expressed constraints and automatically generate constraint-satisfying travel plans. Developers can enhance the agents through prompt engineering or post-training, improve efficiency via workflow improvment[1], or ensure constraint satisfaction through formal translation and solvers[5]. These are suggested approaches and participants are also encouraged to explore alternative methodologies. <br> <a href=\"https://www.codabench.org/competitions/8652/\" style=\"color: #2196F3; text-decoration: none; font-weight: bold;\">https://www.codabench.org/competitions/8652/</a>"
         icon: fas fa-desktop
     text: |
       <div style="text-align: left;">
-     
       <strong id="registration-form">Registration:</strong> <a href="https://wenjuan.nju.edu.cn/vm/YOthCVH.aspx" style="color: green;">Registration Form</a>
       <br>
       <br>

@@ -42,7 +42,7 @@ en: &DEFAULT_EN
       <strong>Evaluation Metrics:</strong> For both TPC-Oracle and TPC-Original, we employ four hard constraints metrics: Environmental Pass Ratio-micro, Environmental Pass Ratio-macro, Conditional Logical Pass Rate, and Final Pass Ratio; and three soft preferences metrics: Daily Average Attractions Visited, Averaged Transportation Time, and Daily Dining Recommendations. The overall score is calculated as the weighted sum of the four hard constraints metrics and the three soft preferences metrics. The weights of the hard constraints metrics and the soft preferences metrics are 0.1, 0.1, 0.25, 0.4, 0.05, 0.05, 0.05, respectively. You could obtain all of these scores by running the provided script. 
       <br>
       <br>
-      <strongid="registration-form">Registration:</strong> <a href="https://wenjuan.nju.edu.cn/vm/YOthCVH.aspx" style="color: green;">Registration Form</a>
+      <strong id="registration-form">Registration:</strong> <a href="https://wenjuan.nju.edu.cn/vm/YOthCVH.aspx" style="color: green;">Registration Form</a>
       <br>
       <br>
 

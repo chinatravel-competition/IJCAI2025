@@ -42,17 +42,17 @@ en: &DEFAULT_EN
       <strong>Evaluation Metrics:</strong> For both TPC-Oracle and TPC-Original, we employ four hard constraints metrics: Environmental Pass Ratio-micro, Environmental Pass Ratio-macro, Conditional Logical Pass Rate, and Final Pass Ratio; and three soft preferences metrics: Daily Average Attractions Visited, Averaged Transportation Time, and Daily Dining Recommendations. The overall score is calculated as the weighted sum of the four hard constraints metrics and the three soft preferences metrics. The weights of the hard constraints metrics and the soft preferences metrics are 0.1, 0.1, 0.25, 0.4, 0.05, 0.05, 0.05, respectively. You could obtain all of these scores by running the provided script. 
       <br>
       <br>
-      <strong>Registration:</strong> <a href="https://wenjuan.nju.edu.cn/vm/YOthCVH.aspx">Registration Form</a>
+      <strongid="registration-form">Registration:</strong> <a href="https://wenjuan.nju.edu.cn/vm/YOthCVH.aspx" style="color: green;">Registration Form</a>
       <br>
       <br>
 
-      <strong>Dataset:</strong>  
+      <strong id="dataset-link">Dataset:</strong>  
       <br>
-      <a href="assets/datasets/TPC_IJCAI_phase1.zip" download class="btn btn-primary mt-3">
+      <a href="assets/datasets/TPC_IJCAI_phase1.zip" download class="btn mt-3" style="background-color: lightgreen; border-color: lightgreen; color: black;">
         <i class="fas fa-download me-2"></i>Phase 1 Data (2025-05-29)
       </a>
 
-      <a href="assets/datasets/TPC_IJCAI_phase1.txt" download class="btn btn-primary mt-3">
+      <a href="assets/datasets/TPC_IJCAI_phase1.txt" download class="btn mt-3" style="background-color: lightgreen; border-color: lightgreen; color: black;">
         <i class="fas fa-download me-2"></i>Phase 1 Data Index (2025-05-29)
       </a>
 
@@ -83,12 +83,15 @@ en: &DEFAULT_EN
       </ul>
       <strong>Phase 3 - Final Round:</strong>
       <ul>
-        <li>Final code submission</li>
         <li>Official Evaluation on the private dataset</li>
         <li>Paper submission before the Phase 3 deadline</li>
         <li>Official results announcement on IJCAI25</li>
       </ul>
-
+      
+      <div style="background-color: #ffeb3b; padding: 15px; border-radius: 5px; text-align: center; font-weight: bold; margin-top: 20px;">
+        Please view the detailed rules in the <a href="/competition_rules.html" style="color: #d32f2f; text-decoration: underline;">competition_rules</a>.
+      </div>
+      
       <br>
       
       <br>
@@ -184,7 +187,7 @@ en: &DEFAULT_EN
 
       - name: "Jie-Jing Shao"
         role: "Nanjing University"
-        image: assets/img/team/shaojj.jpg
+        image: assets/img/team/shaojj.png
 
       - name: "Xiao-Wen Yang"
         role: "Nanjing University"

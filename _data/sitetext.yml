@@ -184,9 +184,9 @@ en: &DEFAULT_EN
       - title: "Huawei"
         url: https://www.huawei.com/
         logo: assets/img/clients/huawei.jpeg
-      - title: "JSAI"
-        url: http://www.jsai.org.cn/
-        logo: assets/img/clients/JSAI.jpg
+      - title: "JSAI-AIC"
+        url: https://www.aicomp.cn/
+        logo: assets/img/clients/AIC_logo.jpg
       - title: "FCS"
         url: https://link.springer.com/journal/11704/
         logo: assets/img/clients/FCS_logo.png

@@ -52,6 +52,13 @@ en: &DEFAULT_EN
         <i class="fas fa-download me-2"></i>Phase 1 Data Index (2025-05-29)
       </a>
       <br>
+      <a href="assets/datasets/TPC_IJCAI_phase2.zip" download class="btn mt-3" style="background-color: lightgreen; border-color: lightgreen; color: black;">
+        <i class="fas fa-download me-2"></i>Phase 2 Data (2025-08-7)
+      </a>
+      <a href="assets/datasets/TPC_IJCAI_phase2.txt" download class="btn mt-3" style="background-color: lightgreen; border-color: lightgreen; color: black;">
+        <i class="fas fa-download me-2"></i>Phase 2 Data Index (2025-08-7)
+      </a>
+      <br>
       <br>
       
 

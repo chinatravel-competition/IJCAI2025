@@ -1,0 +1,91 @@
+<section class="py-5" id="{{ site.data.sitetext[site.locale].awards.section }}">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">
+                {{ site.data.sitetext[site.locale].awards.title }}
+            </h2>
+            <p class="text-muted">Final Rankings of OS & DSL Tracks</p>
+        </div>
+
+        <div class="row">
+            {% assign track_dsl = site.data.sitetext[site.locale].awards.tracklist | where: "name", "DSL Track" | first
+            %}
+            {% assign track_os = site.data.sitetext[site.locale].awards.tracklist | where: "name", "OS Track" | first %}
+
+            <!-- 左侧 DSL Track -->
+            <div class="col-md-6">
+                <h3 class="text-center">{{ track_dsl.name }}</h3>
+                <table class="table table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>Affiliation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in track_dsl.rankings %}
+                        <tr>
+                            <td style="
+                                  {% if item.rank == 1 %} background-color:#ffd700; font-weight:bold;
+                                  {% elsif item.rank == 2 %} background-color:#c0c0c0; font-weight:bold;
+                                  {% elsif item.rank == 3 %} background-color:#cd7f32; color:white; font-weight:bold;
+                                  {% endif %}
+                                ">
+                                {% if item.rank == 1 %} 🥇
+                                {% elsif item.rank == 2 %} 🥈
+                                {% elsif item.rank == 3 %} 🥉
+                                {% else %} {{ item.rank }} {% endif %}
+                            </td>
+                            <td style="
+                                    {% if item.rank == 1 %} font-weight:bold; color:red; {% endif %}
+                                ">{{ item.team }}</td>
+                            <td style="
+                                    {% if item.rank == 1 %} font-weight:bold; color:red; {% endif %}
+                                ">{{ item.affiliation }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 右侧 OS Track -->
+            <div class="col-md-6">
+                <h3 class="text-center">{{ track_os.name }}</h3>
+                <table class="table table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>Affiliation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in track_os.rankings %}
+                        <tr>
+                            <td style="
+                                  {% if item.rank == 1 %} background-color:#ffd700; font-weight:bold;
+                                  {% elsif item.rank == 2 %} background-color:#c0c0c0; font-weight:bold;
+                                  {% elsif item.rank == 3 %} background-color:#cd7f32; color:white; font-weight:bold;
+                                  {% endif %}
+                                ">
+                                {% if item.rank == 1 %} 🥇
+                                {% elsif item.rank == 2 %} 🥈
+                                {% elsif item.rank == 3 %} 🥉
+                                {% else %} {{ item.rank }} {% endif %}
+                            </td>
+                            <td style="
+                                    {% if item.rank == 1 %} font-weight:bold; color:red; {% endif %}
+                                ">{{ item.team }}</td>
+                            <td style="
+                                    {% if item.rank == 1 %} font-weight:bold; color:red; {% endif %}
+                                ">{{ item.affiliation }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</section>

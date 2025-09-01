@@ -1,0 +1,25 @@
+table.table tr.champion td {
+    background-color: #fff9c4 !important;
+    /* 浅金色 */
+    font-weight: bold !important;
+}
+
+table.table tr.second td {
+    background-color: #eeeeee !important;
+    /* 浅银色 */
+    font-weight: bold !important;
+}
+
+table.table tr.third td {
+    background-color: #f2cea9 !important;
+    /* 浅铜色 */
+    color: black !important;
+    font-weight: bold !important;
+}
+
+/* 禁止 hover 覆盖颜色 */
+table.table tr.champion:hover td,
+table.table tr.second:hover td,
+table.table tr.third:hover td {
+    background-color: inherit !important;
+}

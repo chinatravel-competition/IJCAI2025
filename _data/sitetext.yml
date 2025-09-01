@@ -270,6 +270,61 @@ en: &DEFAULT_EN
         icon: "fab fa-github"
       # - url: https://huggingface.co/datasets/LAMDA-NeSy/ChinaTravel
       #   icon: "fab fa-database"
+  awards:
+    section: awards
+    title: "Awards"
+    tracklist:
+      - name: "DSL Track"
+        rankings:
+          - rank: 1
+            team: "UrbanTrip"
+            affiliation: "Beijing Institute of Technology"
+          - rank: 2
+            team: "OPT"
+            affiliation: "East China Normal University | Ant Group"
+          - rank: 3
+            team: "annnnn"
+            affiliation: "Lanzhou Jiaotong University"
+          # - rank: 4
+          #   team: "Travel Planner"
+          # - rank: 5
+          #   team: "BD-Lab"
+          # - rank: 6
+          #   team: "jerry_huang"
+          # - rank: 7
+          #   team: "ploract"
+
+      - name: "OS Track"
+        rankings:
+          - rank: 1
+            team: "EA"
+            affiliation: "East China Normal University | Ant Group"
+          - rank: 2
+            team: "whexity"
+            affiliation: "Peking University"
+          - rank: 3
+            team: "SuperAgent"
+            affiliation: "Beijing Wenge Tech | Xidian University"
+
+          # - rank: 4
+          #   team: "BD-Lab"
+          # - rank: 5
+          #   team: "annnnn"
+          # - rank: 6
+          #   team: "旅行者计划"
+          # - rank: 7
+          #   team: "theone"
+          # - rank: 8
+          #   team: "3DSAIL"
+          # - rank: 9
+          #   team: "DB"
+          # - rank: 10
+          #   team: "xxxxa"
+          # - rank: 11
+          #   team: "ploract"
+          # - rank: 12
+          #   team: "jerry_huang"
+
 en-US:
   <<: *DEFAULT_EN
 en-CA:
